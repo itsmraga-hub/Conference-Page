@@ -1,0 +1,34 @@
+<!-- Speaker 1 -->
+<!-- <div class="speaker-content">
+            <img src="./assets/img.jpg" alt="" class="speaker-img" />
+            <div class="speaker-details">
+              <div>
+                <h3 class="speaker-name">William Raga</h3>
+                <p class="speaker-title">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolor, fugit.
+                </p>
+              </div>
+              <p class="speaker-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                minus earum labore mollitia
+              </p>
+            </div> 
+          </div> -->
+<!-- Speaker 2 -->
+<!-- <div class="speaker-content">
+            <img src="./assets/raga.JPG" alt="" class="speaker-img" />
+            <div class="speaker-details">
+              <div class="speaker">
+                <h3 class="speaker-name">William Raga</h3>
+                <p class="speaker-title">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolor, fugit.
+                </p>
+              </div>
+              <p class="speaker-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                minus earum labore mollitia
+              </p>
+            </div>
+          </div> -->
