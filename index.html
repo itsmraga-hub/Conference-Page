@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Mialoni conference page</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <a href="#" class="header-logo"
+        ><img src="./assets/svgs/logo.jpg" alt="A logo of mialoni" class="logo"
+      /></a>
+      <div class="burger-menu" aria-hidden="false">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+      <nav class="nav-container nav-mobile-container" data-visible="false">
+        <ul class="nav-list-container">
+          <li class="nav-list-item">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#main-program" class="nav-link">Program</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#join" class="nav-link">Join</a>
+          </li>
+          <li class="nav-list-item"><a href="#sponsors" class="nav-link">Sponsor</a></li>
+          <li class="nav-list-item"><a href="./blog.html" class="nav-link">News</a></li>
+          <li class="nav-list-item">
+            <a href="#home" class="nav-link">Mialoni</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container" id="home">
+      <!-- Main header / Landing Page Content Section -->
+      <section class="main-container__content">
+        <h1 class="main-container__content-header">
+          Mialoni Back To Basics Conference, Kenya
+          <span class="normal-font">2022</span>.
+        </h1>
+        <p class="main-container__content-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+          error? Fugiat omnis sed suscipit deleniti, a rem dolorem at, quisquam
+          aliquid voluptatem nobis quas quo!
+        </p>
+        <div>
+          <p class="main-container__content-date">
+            <span class="normal-font">2022.08.26</span>(FRI) ~
+            <span class="normal-font">28</span>(SUN)
+          </p>
+          <p class="location">@Jumuia Christian Conference Center, Kanamai</p>
+        </div>
+      </section>
+
+      <!-- Main Program Section -->
+      <section class="main-program">
+        <h2 class="main-program-title lato-700">Main Program</h2>
+        <div class="main-program__project-cards" id="main-program">
+          <div class="main-program__card">
+            <img
+              src="./assets/svgs/speaker-giving-a-lecture-on-a-stand-svgrepo-com.svg"
+              alt="An icon of a speaker giving a lecture on a stand"
+              class="icon-svg"
+            />
+            <h2 class="program-card__title">Lecture</h2>
+            <p class="program-card__text-content">
+              Listen to the speakers from various countries about the mesages of
+              sharing and opening.
+            </p>
+          </div>
+          <div class="main-program__card">
+            <img
+              class="icon-svg"
+              src="./assets/svgs/business-presentation-svgrepo-com.svg"
+              alt="An image of a business presentation"
+              srcset=""
+            />
+            <h2 class="program-card__title">Lecture</h2>
+            <p class="program-card__text-content">
+              Appreciate various creations applying CC license of artists,
+              organized from Art Centere Kenya.
+            </p>
+          </div>
+          <div class="main-program__card">
+            <img
+              src="./assets/svgs/discuss-svgrepo-com.svg"
+              alt="An image depicting people having a discussion"
+              class="icon-svg"
+            />
+            <h2 class="program-card__title">Lecture</h2>
+            <p class="program-card__text-content">
+              Have the time to share your thoughts and opinions with experts for
+              each topic.
+            </p>
+          </div>
+          <div class="main-program__card">
+            <img
+              class="icon-svg"
+              src="./assets/svgs/connect-svgrepo-com.svg"
+              alt="An image depicting networking and people connecting"
+            />
+            <h2 class="program-card__title">Worship</h2>
+            <p class="program-card__text-content">
+              Try creating your own work using open source license rather than
+              just watching.
+            </p>
+          </div>
+          <div class="main-program__card">
+            <img
+              src="./assets/svgs/connect-svgrepo-com.svg"
+              alt="An image depicting networking and people connecting"
+              class="icon-svg"
+            />
+            <h2 class="program-card__title">Workshop</h2>
+            <p class="program-card__text-content">
+              Get opportunities to network with CC affiliates around the world,
+              also after the summit.
+            </p>
+          </div>
+        </div>
+        <a href="http://" class="main-program__btn" id="join"
+          ><span class="text-visible">Click to Book a seat now!</span> <span class="text-hidden">See the whole program</span></a
+        >
+      </section>
+
+      <!-- Featured Speakers Section -->
+      <section class="speaker-section__container">
+        <h2 class="speaker-section__container-title">Featured Speakers</h2>
+        <div class="speakers-container" id="speakersContainer">
+          <!-- Content here is generated dynamically -->
+        </div>
+        <a href="#speakersContainer" class="btn btn-primary" id="more" data-visible="false"
+          ><span class="more">MORE</span><span class="less">LESS</span
+          ><svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 16a1 1 0 0 1-.707-.293L5.636 10.05A1 1 0 0 1 7.05 8.636l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414l-5.657 5.657A1 1 0 0 1 12 16z"
+            /></svg></a>
+      </section>
+    </main>
+    <footer class="footer-container" id="footer">
+      <section class="partners-container" id="partners">
+        <h4 class="partners-container__title">Partners</h4>
+        <div class="partners" id="sponsors">
+          <p class="sponsor">mozilla</p>
+          <p class="sponsor">Google</p>
+          <p class="sponsor">Naver</p>
+          <p class="sponsor">daumkakao</p>
+          <p class="sponsor">airbnb</p>
+        </div>
+      </section>
+      <section class="copyright-container">
+        <img src="./assets/logo/mialoni-black-white.png" alt="Logo image for mialoni" class="logo" />
+        <p class="copyright-text">
+          2022 Mialoni kenya. <br />Some Rights Reserved.
+        </p>
+      </section>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
