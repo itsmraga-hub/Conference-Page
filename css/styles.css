@@ -37,11 +37,11 @@ body {
 
 /* Font classes */
 .Mcocogoose {
-  font-family: cocogoose-medium;
+  font-family: cocogoose-medium, sans-serif;
 }
 
 .Bcocogoose {
-  font-family: cocogoose-ExtraBold;
+  font-family: cocogoose-ExtraBold, sans-serif;
 }
 
 .lato-700 {
@@ -74,6 +74,10 @@ body {
   position: absolute;
   left: 1rem;
   z-index: 10000;
+}
+
+.burger-menu:hover {
+  cursor: pointer;
 }
 
 .burger-menu .burger-line {
@@ -109,7 +113,6 @@ body {
   position: fixed;
   inset: 0;
   padding-top: 2em;
-  background-color: #ec5242;
   background: linear-gradient(#d3d3d3, #ec5242, #d3d3d3, #272a31);
   transform: translateX(-100%);
   transition: ease-out 250ms;
@@ -134,15 +137,24 @@ body {
 
 .header-container .nav-container .nav-list-container .nav-list-item {
   padding: 1rem;
-  
 }
 
 .header-container .nav-container .nav-list-container .nav-list-item .nav-link {
   text-decoration: none;
   color: #272a31;
+  padding: 0.2em 0.25em;
+}
+
+.header-container .nav-container .nav-list-container .nav-list-item .nav-link:hover {
+  color: #ec5242;
+}
+
+.header-container .nav-container .nav-list-container .nav-list-item .nav-link:active {
+  border: 2px solid #ec5242;
 }
 
 /* Main container styling */
+
 /* .main-container {
   width: 100%;
 } */
@@ -155,14 +167,14 @@ body {
 
 .main-container__content .main-container__content-header {
   text-transform: uppercase;
-  font-family: cocogoose-ExtraBold;
+  font-family: cocogoose-ExtraBold, sans-serif;
   font-size: 3.6em;
   font-weight: bold;
   color: #ec5242;
   padding-bottom: 1rem;
 }
 
-.main-container__content .main-container__content-header .normal-font{
+.main-container__content .main-container__content-header .normal-font {
   font-family: "Lato", sans-serif;
 }
 
@@ -174,7 +186,7 @@ body {
 }
 
 .main-container__content .main-container__content-date {
-  font-family: cocogoose-ExtraBold;
+  font-family: cocogoose-ExtraBold, sans-serif;
   font-size: 2em;
   font-weight: bold;
   padding-top: 1rem;
@@ -200,13 +212,30 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.2em;
+  gap: 2em;
   padding: 2em;
 }
 
 .main-program .main-program-title {
   text-align: center;
   font-size: 2em;
+}
+
+.main-program .main-program-title::after {
+  content: "";
+  display: block;
+  padding-top: 0.5rem;
+  width: 20%;
+  margin: 0 auto;
+  border-bottom: 0.1rem solid #ec5242;
+}
+
+.main-program .main-program__project-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2em;
 }
 
 /* .main-program .main-program__card {
@@ -246,10 +275,18 @@ body {
   font-size: 2em;
   padding: 1em;
   background-color: #ec5242;
+  border-radius: 0.2rem;
   color: #d3d3d3;
   margin: 1em 0;
 }
 
+.main-program .main-program__btn:hover {
+  cursor: pointer;
+}
+
+.main-program .main-program__btn .text-hidden {
+  display: none;
+}
 
 /*  Speaker section styling */
 .speaker-section__container {
@@ -286,7 +323,6 @@ body {
 .speaker-section__container .speakers-container .speaker-content {
   display: flex;
   gap: 1em;
-  /* border: 1px solid #ec5242; */
 }
 
 .speaker-section__container .speakers-container .speaker-content .speaker-img {
@@ -319,14 +355,19 @@ body {
   text-align: center;
   width: 100%;
   border: 0.01rem solid #272a31;
+  border-radius: 0.2rem;
   margin-top: 2em;
   font-size: 1.5em;
   font-weight: bold;
-  padding: 0.8em;
+  padding: 0.6em;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #272a31;
+}
+
+.speaker-section__container .btn:hover {
+  cursor: pointer;
 }
 
 .speaker-section__container .btn .less {
@@ -339,7 +380,7 @@ body {
 }
 
 .speaker-section__container .btn[data-visible="true"] {
-
+  gap: 0.1rem;
 }
 
 .speaker-section__container .btn[data-visible="true"] .less {
@@ -354,6 +395,60 @@ body {
   display: none;
 }
 
+/* Footer section */
+.footer-container .partners-container {
+  background-color: #272a31;
+  color: #d3d3d3;
+  padding: 2em;
+}
+
+.footer-container .partners-container .partners-container__title {
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.footer-container .partners-container .partners-container__title::after {
+  content: "";
+  display: block;
+  padding-top: 0.25rem;
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 0.2rem solid #ec5242;
+}
+
+.footer-container .partners-container .partners {
+  width: 100%;
+  display: flex;
+  padding: 2em 0 1em;
+  gap: 0.5em;
+  font-size: 3em;
+  flex-wrap: wrap;
+}
+
+.footer-container .partners-container .partners .sponsor {
+  width: 30%;
+}
+
+.footer-container .partners-container .partners .sponsor:nth-child(4),
+.footer-container .partners-container .partners .sponsor:nth-child(5) {
+  width: 50%;
+}
+
+.footer-container .copyright-container {
+  display: grid;
+  padding: 3em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-container .copyright-container .logo {
+  width: 75%;
+}
+
+.footer-container .copyright-container .copyright-text {
+  font-size: 1.2em;
+  align-self: center;
+}
+
 /* Media query for width >= 768px */
 @media (min-width: 768px) {
   .burger-menu {
@@ -361,13 +456,21 @@ body {
   }
 
   .header-container {
-    padding: 2em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 1.5em 3em;
+    background-color: #fff;
+    font-size: 1.8em;
   }
 
-  
   .header-container .header-logo {
     text-decoration: none;
     display: block;
+  }
+
+  .header-container .header-logo .logo {
+    width: 50%;
   }
 
   .header-container .header-logo:hover {
@@ -380,6 +483,7 @@ body {
 
   .header-container .nav-mobile-container {
     position: relative;
+    background: #fff;
     padding-top: 0;
     background-color: inherit;
     transform: translateX(0%);
@@ -401,5 +505,115 @@ body {
 
   .header-container .nav-container .nav-list-container .nav-list-item {
     padding: 0 0.5rem;
+  }
+
+  .main-container__content {
+    padding: 6em 5em;
+    width: 75%;
+  }
+
+  .main-program .main-program__project-cards {
+    flex-direction: row;
+    padding: 2em;
+    gap: 0.5em;
+  }
+
+  .main-program .main-program__project-cards .main-program__card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    text-align: center;
+  }
+
+  .main-program .main-program__project-cards .main-program__card:hover {
+    border: 1px solid #fff;
+  }
+
+  .main-program .main-program__btn {
+    text-decoration: underline;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color: inherit;
+    border-radius: 0.2rem;
+    color: #d3d3d3;
+    margin: 1em 0;
+  }
+
+  .main-program .main-program__btn .text-hidden {
+    display: inline;
+  }
+
+  .main-program .main-program__btn .text-visible {
+    display: none;
+  }
+
+  .speaker-section__container {
+    background-color: #d3d3d305;
+  }
+
+  .speaker-section__container .speakers-container {
+    padding: 2em 4em;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .speaker-section__container .speaker-section__container-title::after {
+    width: 5%;
+  }
+
+  .speaker-section__container .btn {
+    width: 50%;
+    margin: auto;
+  }
+
+  .footer-container .partners-container .partners {
+    flex-direction: row;
+    padding: 3em 2em;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-container .partners-container .partners .sponsor {
+    width: max-content;
+  }
+
+  .footer-container .partners-container .partners .sponsor:nth-child(4),
+  .footer-container .partners-container .partners .sponsor:nth-child(5) {
+    width: max-content;
+  }
+
+  .footer-container .copyright-container {
+    padding: 4em 5em;
+  }
+
+  .footer-container .copyright-container .copyright-text {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-container {
+    padding: 0.5em 5em;
+  }
+
+  .main-container__content {
+    padding: 10em 14em;
+    width: 67%;
+  }
+
+  .main-program .main-program__project-cards {
+    padding: 4em 18em;
+  }
+
+  .main-program .main-program__project-cards .main-program__card {
+    height: 180px;
+    gap: 1.8em;
+    text-align: center;
+  }
+
+  .speaker-section__container {
+    padding: 2em 12em;
   }
 }
