@@ -1,0 +1,180 @@
+@import url(./styles.css);
+
+
+:root {
+  --color-black: #272a31;
+  --color-orange: #ec5242;
+  --color-white: #d3d3d3;
+}
+
+.main-container__content {
+  margin: 0 0;
+  height: 92vh;
+  gap: 3em;
+  font-size: 1.2em;
+}
+
+.main-container .main-container__content .greetings {
+  color: #ec5242;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main-container .main-container__content .main-container__content-header {
+  font-size: 3em;
+}
+
+.main-container .main-container__content .about-container__content-info {
+  background-color: #fff;
+  border: 1px solid #272a31;
+  padding: 1em;
+  font-size: 1.6em;
+  line-height: 1.4em;
+  letter-spacing: 0.05em;
+}
+
+.main-container .main-container__content div {
+  padding-top: 2em;
+}
+
+.main-container .main-container__content .about-container__content-date {
+  text-align: center;
+  color: #272a31;
+  font-size: 2em;
+  line-height: 1.4em;
+}
+
+.main-container .main-container__content .about-container__content-date .about-container__content-mail {
+  color: #272a31;
+  font-weight: bold;
+}
+
+.main-container .about-logo__container {
+  background-color: #fff;
+  text-align: center;
+  padding: 5em 2em;
+  border-bottom: 1px solid #272a31;
+}
+
+.main-container .about-logo__container .about-logo__heading {
+  font-size: 3em;
+  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.main-container .about-logo__container .about-logo__heading::after {
+  content: "";
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  border-bottom: 0.1em solid #ec5242;
+}
+
+.main-container .about-logo__container .about-logo__desc {
+  font-size: 2em;
+  font-weight: 550;
+  padding-bottom: 1em;
+}
+
+.main-container .about-logo__container .about-logo__desc .text-hidden {
+  display: none;
+}
+
+.main-container .about-logo__container .about-logo__img {
+  border: 0.001rem solid #272a31;
+  padding: 3em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-container .past-conferences__container {
+  background-color: #fff;
+  padding: 2em;
+  text-align: center;
+}
+
+.main-container .past-conferences__container .past-conferences__heading {
+  font-size: 3em;
+}
+
+.main-container .past-conferences__container .past-conferences__heading::after {
+  content: "";
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  border-bottom: 0.1em solid #ec5242;
+}
+
+.main-container .past-conferences__container .past-conferences__desc {
+  font-size: 2em;
+}
+
+.main-container .past-conferences__container .conference-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  padding: 2em;
+  backdrop-filter: blur(100px) fill(#ec5242);
+}
+
+.main-container .past-conferences__container .nineteen {
+  background: url(../assets/groups/people-6.jpeg);
+  margin-bottom: 1em;
+}
+
+.main-container .past-conferences__container .twenty {
+  background: url(../assets/groups/people-7.jpeg);
+}
+
+.main-container .past-conferences__container .conference-container .conference-container__head {
+  color: #fff;
+  font-size: 3em;
+  opacity: 1;
+}
+
+.main-container .past-conferences__container .conference-container .conference-container__desc {
+  color: #fff;
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  .main-container__content {
+    margin: 5em auto;
+  }
+
+  .main-container__content .greetings {
+    display: none;
+  }
+
+  .main-container .about-logo__container .about-logo__desc {
+    padding: 1em 4em 0;
+    font-weight: normal;
+  }
+
+  .main-container .about-logo__container .about-logo__desc .text-hidden {
+    display: inline;
+  }
+  .main-container .past-conferences__container .conference {
+    display: flex;
+    padding: 3em;
+    gap: 2em;
+  }
+
+  .main-container .past-conferences__container .past-conferences__desc {
+    padding: 1em 0;
+  }
+
+  .main-container .about-logo__container .about-logo__img {
+    padding: 3em;
+    width: 50%;
+    margin: 3em auto 0;
+  }
+}
