@@ -93,3 +93,5 @@
 - [Original Idea by Cindy Shin](https://www.behance.net/adagio07) on Behance.
 
 - [Font: Cocogoose Classic Family by Zetafonts](http://www.zetafonts.com/collection/2788)
+
+- [Speaker Pictures](https://unsplash.com/) found on unsplash.
