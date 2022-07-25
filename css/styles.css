@@ -444,6 +444,10 @@ body {
   width: 75%;
 }
 
+.footer-container .copyright-container .text-hidden {
+  display: none;
+}
+
 .footer-container .copyright-container .copyright-text {
   font-size: 1.2em;
   align-self: center;
