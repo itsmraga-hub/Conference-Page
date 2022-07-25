@@ -250,10 +250,10 @@ body {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 20% 25% 50%;
   align-items: center;
+  justify-content: center;
   padding: 1em;
-  gap: 1em;
 }
 
 .main-program .main-program__card .icon-svg {
