@@ -43,37 +43,37 @@ const speakersContainer = document.querySelector('#speakersContainer');
 let i = 0;
 const speakers = [
   {
-    speakerImg: './assets/img.jpg',
+    speakerImg: './assets/speakers/raga.jpg',
     speakerName: 'William Raga',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: './assets/raga.JPG',
+    speakerImg: './assets/speakers/speaker-1.JPEG',
     speakerName: 'John Kamau',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: './assets/img.jpg',
+    speakerImg: './assets/speakers/speaker-2.JPEG',
     speakerName: 'Gertrude Kurgat',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: './assets/raga.JPG',
+    speakerImg: './assets/speakers/speaker-3.JPEG',
     speakerName: 'Ruth Njeri',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: './assets/img.jpg',
+    speakerImg: './assets/speakers/speaker-4.JPEG',
     speakerName: 'Emmanuel Kiprono',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: './assets/raga.JPG',
+    speakerImg: './assets/speakers/speaker-5.JPEG',
     speakerName: 'Evans',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
