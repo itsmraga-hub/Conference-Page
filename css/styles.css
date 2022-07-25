@@ -433,6 +433,7 @@ body {
   width: 100%;
   background: #272a31;
   fill: #272a31;
+  opacity: 0.5;
 }
 
 .footer-container .partners-container .partners .sponsor-img:nth-child(4),

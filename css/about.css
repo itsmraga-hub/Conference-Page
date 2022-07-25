@@ -1,6 +1,3 @@
-@import url(./styles.css);
-
-
 :root {
   --color-black: #272a31;
   --color-orange: #ec5242;
@@ -9,7 +6,6 @@
 
 .main-container__content {
   margin: 0 0;
-  height: 92vh;
   gap: 3em;
   font-size: 1.2em;
 }
@@ -121,17 +117,36 @@
   align-items: center;
   justify-content: center;
   margin-top: 2em;
+}
+
+.main-container .past-conferences__container .conference .conference-container .transparent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ec5242;
+  opacity: 0.8;
   padding: 2em;
-  backdrop-filter: blur(100px) fill(#ec5242);
+}
+
+.main-container .past-conferences__container .conference .conference-container .transparent .visible {
+  opacity: 1;
+  color: #fff;
 }
 
 .main-container .past-conferences__container .nineteen {
   background: url(../assets/groups/people-6.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 1em;
 }
 
 .main-container .past-conferences__container .twenty {
   background: url(../assets/groups/people-7.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-container .past-conferences__container .conference-container .conference-container__head {
@@ -148,6 +163,7 @@
 @media (min-width: 768px) {
   .main-container__content {
     margin: 5em auto;
+    height: 92vh;
   }
 
   .main-container__content .greetings {
@@ -162,6 +178,7 @@
   .main-container .about-logo__container .about-logo__desc .text-hidden {
     display: inline;
   }
+
   .main-container .past-conferences__container .conference {
     display: flex;
     padding: 3em;
