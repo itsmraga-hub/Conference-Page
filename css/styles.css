@@ -167,9 +167,10 @@ body {
 
 .main-container {
   /* width: 100%; */
-  background-image: url(../assets/otherSVGS/airplane-flight-in-circle-around-earth-svgrepo-com.svg);
-  background-repeat: no-repeat;
-  background-position: top 12% left;
+  background-image: url(../assets/otherSVGS/airplane-flight-in-circle-around-earth-svgrepo-com.svg), url(../assets/otherSVGS/earth-grid-with-circular-pattern-around-svgrepo-com.svg), url(../assets/otherSVGS/link-chain-svgrepo-com.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top 12% left, top 12% right, top 25% right;
+  background-size: auto, auto, 50px;
 }
 
 /* Section 1 - main-container__content */
@@ -203,7 +204,8 @@ body {
 }
 
 .main-container .main-container__content-info {
-  border: 0.1em solid #fff;
+  background-color: #fff;
+  border: 0.1em solid #272a31;
   padding: 1rem;
   font-family: 'Lato', sans-serif;
   font-size: 1.8em;
@@ -231,7 +233,7 @@ body {
 /* Section 2 - Main program section */
 .main-program {
   /* width: 100%; */
-  background-image: url(../assets/otherSVGS/eight-pointed-star-svgrepo-com.svg);
+  background-image: url(../assets/otherSVGS/pattern_bg.png);
   color: #d3d3d3;
 }
 
@@ -582,6 +584,10 @@ body {
     padding: 0 0.5rem;
   }
 
+  .main-container {
+    background-position: top 12% left 3%, top 12% right 30%, top 30% right 40%;
+  }
+
   .main-container__content {
     padding: 6em 5em;
     width: 75%;
@@ -685,11 +691,16 @@ body {
 @media (min-width: 900px) {
   .header-container {
     padding: 0.5em 5em;
-    height: 8vh;
+    height: 10vh;
+  }
+
+  .main-container {
+    background-position: top 15% left 9%, top 15% right 32%, top 30% right 40%;
   }
 
   .main-container__content {
     padding: 8em 10em;
+    height: 90vh;
     width: 77%;
     font-size: 1.3em;
   }
