@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
 @font-face {
   font-family: cocogoose-medium;
   src: url(./Cocogoose-Classic-Medium-trial.ttf);
 }
+
+/* font-family: 'COCOGOOSE', sans-serif; */
 
 @font-face {
   font-family: cocogoose-ExtraBold;
@@ -38,6 +42,7 @@ body {
 /* Font classes */
 .Mcocogoose {
   font-family: cocogoose-medium, sans-serif;
+  font-family: 'COCOGOOSE', sans-serif;
 }
 
 .Bcocogoose {
@@ -145,6 +150,10 @@ body {
   padding: 0.2em 0.25em;
 }
 
+.header-container .nav-container .nav-list-container .nav-list-item .border {
+  border: 2px solid #ec5242;
+}
+
 .header-container .nav-container .nav-list-container .nav-list-item .nav-link:hover {
   color: #ec5242;
 }
@@ -155,9 +164,12 @@ body {
 
 /* Main container styling */
 
-/* .main-container {
-  width: 100%;
-} */
+.main-container {
+  /* width: 100%; */
+  background-image: url(../assets/otherSVGS/airplane-flight-in-circle-around-earth-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: top 12% left;
+}
 
 /* Section 1 - main-container__content */
 .main-container__content {
@@ -170,8 +182,20 @@ body {
   font-family: cocogoose-ExtraBold, sans-serif;
   font-size: 3.6em;
   font-weight: bold;
-  color: #ec5242;
+  /* color: #ec5242; */
+  color: hsla(6, 100%, 59%, 0.7);
+  opacity: 0.9;
   padding-bottom: 1rem;
+}
+
+.demo-text {
+	font-size: 80px;
+	font-weight: 700;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+  opacity: 1;
+	background-image: url(../assets/groups/people.jpeg);
 }
 
 .main-container__content .main-container__content-header .normal-font {
@@ -183,6 +207,7 @@ body {
   padding: 1rem;
   font-family: 'Lato', sans-serif;
   font-size: 1.8em;
+  z-index: 11100;
 }
 
 .main-container__content .main-container__content-date {
@@ -206,8 +231,15 @@ body {
 /* Section 2 - Main program section */
 .main-program {
   /* width: 100%; */
-  background-color: #272a31;
+  background-image: url(../assets/otherSVGS/eight-pointed-star-svgrepo-com.svg);
   color: #d3d3d3;
+}
+
+.main-program .main-program-background {
+  width: 100%;
+  height: 100%;
+  background-color: #272a31;
+  opacity: 0.97;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,26 +270,20 @@ body {
   gap: 1.2em;
 }
 
-/* .main-program .main-program__card {
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  padding: 1em;
-  gap: 1.5em;
-} */
-
 .main-program .main-program__card {
-  width: 100%;
+  width: 90%;
   background-color: rgba(255, 255, 255, 0.1);
   display: grid;
-  grid-template-columns: 20% 25% 50%;
+  grid-template-columns: 20% 30% 50%;
+  column-gap: 0.01em;
   align-items: center;
   justify-content: center;
-  padding: 1em;
+  padding: 1.2em;
 }
 
 .main-program .main-program__card .icon-svg {
   width: 40px;
+  display: block;
 }
 
 .main-program .main-program__card .program-card__title {
@@ -323,6 +349,9 @@ body {
 .speaker-section__container .speakers-container .speaker-content {
   display: flex;
   gap: 1em;
+  background-image: url(../assets/otherSVGS/chess-board-svgrepo-com.svg);
+  background-size: 50px;
+  background-repeat: no-repeat;
 }
 
 .speaker-section__container .speakers-container .speaker-content .speaker-img {
@@ -334,7 +363,7 @@ body {
 .speaker-section__container .speakers-container .speaker-content .speaker-details {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
 }
 
 .speaker-section__container .speakers-container .speaker-content .speaker-details .speaker-name {
@@ -430,10 +459,16 @@ body {
 }
 
 .footer-container .partners-container .partners .sponsor-img {
-  width: 100%;
+  width: 70%;
+  aspect-ratio: 1 / 1;
   background: #272a31;
   fill: #272a31;
   opacity: 0.5;
+}
+
+.footer-container .partners-container .partners .hands {
+  fill: #272a31;
+  opacity: 0.3;
 }
 
 .footer-container .partners-container .partners .sponsor-img:nth-child(4),
@@ -459,6 +494,32 @@ body {
 .footer-container .copyright-container .copyright-text {
   font-size: 1.2em;
   align-self: center;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .speaker-section__container .speakers-container .speaker-content .speaker-img {
+    width: 20%;
+  }
+
+  .speaker-section__container .speakers-container .speaker-content .speaker-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  .speaker-section__container .speakers-container .speaker-content .speaker-details .speaker-name {
+    font-size: 2em;
+  }
+  
+  .speaker-section__container .speakers-container .speaker-content .speaker-details .speaker-title {
+    font-size: 1.4em;
+    color: rgba(255, 0, 0, 0.9);
+    font-style: italic;
+  }
+  
+  .speaker-section__container .speakers-container .speaker-content .speaker-details .speaker-description {
+    font-size: 1.5em;
+  }
 }
 
 /* Media query for width >= 768px */
@@ -589,10 +650,11 @@ body {
   .footer-container .partners-container .partners {
     display: flex;
     flex-direction: row;
+    gap: 1em;
   }
 
   .footer-container .partners-container .partners .sponsor-img {
-    width: 120px;
+    width: 100px;
   }
 
   .footer-container .partners-container .partners .sponsor-img:nth-child(4),
@@ -626,7 +688,7 @@ body {
   }
 
   .main-container__content {
-    padding: 8em 14em;
+    padding: 8em 10em;
     width: 77%;
     font-size: 1.3em;
   }
@@ -636,7 +698,8 @@ body {
   }
 
   .main-program .main-program__project-cards .main-program__card {
-    height: 180px;
+    height: 240px;
+    width: 180px;
     gap: 1.8em;
     text-align: center;
   }

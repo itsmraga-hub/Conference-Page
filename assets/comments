@@ -32,3 +32,10 @@
               </p>
             </div>
           </div> -->
+          /* .main-program .main-program__card {
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            padding: 1em;
+            gap: 1.5em;
+          } */
