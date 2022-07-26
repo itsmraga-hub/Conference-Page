@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
 
 @font-face {
@@ -182,20 +181,19 @@ body {
   font-family: cocogoose-ExtraBold, sans-serif;
   font-size: 3.6em;
   font-weight: bold;
-  /* color: #ec5242; */
   color: hsla(6, 100%, 59%, 0.7);
   opacity: 0.9;
   padding-bottom: 1rem;
 }
 
 .demo-text {
-	font-size: 80px;
-	font-weight: 700;
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
+  font-size: 80px;
+  font-weight: 700;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
   opacity: 1;
-	background-image: url(../assets/groups/people.jpeg);
+  background-image: url(../assets/groups/people.jpeg);
 }
 
 .main-container__content .main-container__content-header .normal-font {
@@ -506,17 +504,17 @@ body {
     flex-direction: column;
     gap: 2em;
   }
-  
+
   .speaker-section__container .speakers-container .speaker-content .speaker-details .speaker-name {
     font-size: 2em;
   }
-  
+
   .speaker-section__container .speakers-container .speaker-content .speaker-details .speaker-title {
     font-size: 1.4em;
     color: rgba(255, 0, 0, 0.9);
     font-style: italic;
   }
-  
+
   .speaker-section__container .speakers-container .speaker-content .speaker-details .speaker-description {
     font-size: 1.5em;
   }
