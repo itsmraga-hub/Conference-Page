@@ -43,37 +43,37 @@ const speakersContainer = document.querySelector('#speakersContainer');
 let i = 0;
 const speakers = [
   {
-    speakerImg: 'assets/speakers/raga.jpg',
+    speakerImg: 'assets/speakers/raga.JPG',
     speakerName: 'William Raga',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: 'assets/speakers/speaker-1.JPEG',
+    speakerImg: 'assets/speakers/speaker-1.jpeg',
     speakerName: 'John Kamau',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: 'assets/speakers/speaker-2.JPEG',
+    speakerImg: 'assets/speakers/speaker-2.jpeg',
     speakerName: 'Gertrude Kurgat',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: 'assets/speakers/speaker-3.JPEG',
+    speakerImg: 'assets/speakers/speaker-3.jpeg',
     speakerName: 'Ruth Njeri',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: 'assets/speakers/speaker-4.JPEG',
+    speakerImg: 'assets/speakers/speaker-4.jpeg',
     speakerName: 'Emmanuel Kiprono',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
   },
   {
-    speakerImg: 'assets/speakers/speaker-5.JPEG',
+    speakerImg: 'assets/speakers/speaker-5.jpeg',
     speakerName: 'Evans',
     speakertitle: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus earum labore mollitia',
