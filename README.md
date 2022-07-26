@@ -8,6 +8,10 @@
 - CSS
 - JavaScript
 
+## Live Preview
+
+> [Click to view](https://itsmraga-hub.github.io/Conference-Page/)
+
 ## Setup for Basic HTML/CSS Project
 
 - Linter for HTML/CSS installed
@@ -30,11 +34,11 @@
 
   - Responsive Web Design for mobile, tablet and Desktop.
 
-<!-- ![screenshort]() -->
+![screenshot](./assets/mialoni-mobile.png)
 
 - ### Desktop Version
 
-<!-- ![screenshot]() -->
+![screenshot](./assets/mialoni-desktop.png)
 
 ## Prerequisites
 
