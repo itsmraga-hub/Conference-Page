@@ -68,6 +68,10 @@ body {
   padding: 1em;
 }
 
+.header-container .black-header {
+  display: none;
+}
+
 /* Logo */
 .header-container .header-logo {
   display: none;
@@ -532,13 +536,43 @@ body {
 
   .header-container {
     width: 100%;
-    height: 4vh;
+    padding: 0;
     position: fixed;
     top: 0;
-    padding: 1.5em 3em;
     background-color: #fff;
     font-size: 1.8em;
     z-index: 10000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-container .black-header {
+    padding: 0.25em 2em;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #272a31;
+  }
+
+  .header-container .black-header .black-list-item {
+    padding-right: 1em;
+  }
+
+  .header-container .black-header .black-list-item a {
+    color: #d3d3d3;
+    text-decoration: none;
+  }
+
+  .header-container .black-header .black-list-item a svg path {
+    fill: #d3d3d3;
+  }
+
+  .header-container .white-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 3em;
   }
 
   .header-container .header-logo {
@@ -689,17 +723,16 @@ body {
 }
 
 @media (min-width: 900px) {
-  .header-container {
-    padding: 0.5em 5em;
-    height: 10vh;
+  .header-container .black-header {
+    padding: 0.25em 5em;
   }
 
   .main-container {
-    background-position: top 15% left 9%, top 15% right 32%, top 30% right 40%;
+    background-position: top 18% left 8%, top 18% right 32%, top 33% right 40%;
   }
 
   .main-container__content {
-    padding: 8em 10em;
+    padding: 12em 10em;
     height: 90vh;
     width: 77%;
     font-size: 1.3em;

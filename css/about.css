@@ -20,6 +20,7 @@
 
 .main-container .main-container__content .main-container__content-header {
   font-size: 3em;
+  text-align: center;
 }
 
 .main-container .main-container__content .about-container__content-info {
@@ -29,6 +30,7 @@
   font-size: 1.6em;
   line-height: 1.4em;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .main-container .main-container__content div {
@@ -160,6 +162,10 @@
   font-size: 2em;
 }
 
+.footer-container .copyright-container {
+  background-color: #d3d3d3;
+}
+
 @media (min-width: 768px) {
   .main-container__content {
     margin: 5em auto;
@@ -193,5 +199,17 @@
     padding: 3em;
     width: 50%;
     margin: 3em auto 0;
+  }
+
+  .footer-container .partners-container {
+    display: none;
+  }
+
+  .footer-container .copyright-container .copyright-text {
+    color: #d3d3d3;
+  }
+
+  .footer-container .copyright-container {
+    background-color: #272a31;
   }
 }
